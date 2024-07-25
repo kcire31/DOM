@@ -1,22 +1,21 @@
-const header = document.querySelector("header");
-const html = document.querySelector("html");
-const button = document.querySelector(".button");
-const hide = document.querySelector(".header-list");
+const btn = document.getElementById('button');
 
-button.addEventListener("click", openClose);
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
+   btn.value = 'Sending...';
 
-function openClose(){
-    if (header.classList.contains("open")) {
-        header.classList.remove("open");
-        html.classList.remove("open");
-        hide.classList.remove("open");
-        button.textContent = "Menu";
+   const serviceID = 'default_service';
+   const templateID = 'template_9jl3ffa';
 
-    } else{
-        header.classList.add("open");
-        html.classList.add("open");
-        hide.classList.add("open");
-        button.textContent = "Close";
-    }
-}
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+      form.reset();
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
