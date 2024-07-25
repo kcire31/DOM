@@ -416,7 +416,7 @@ html{
 .see.n{
     margin-top: 10px;
     position: relative;
-    left: 1650px;
+    left: 80%;
 }
 
 
@@ -833,8 +833,8 @@ footer{
 
     /* MENU */
     .headerbg{
-        height: auto;
-        padding-bottom: calc(7.5rem + (10 - 7.5) * ((100vw - 20rem)/ (100 - 20)));
+        height: 100vh;
+        /* padding-bottom: calc(7.5rem + (10 - 7.5) * ((100vw - 20rem)/ (100 - 20))); */
     }
 
     .headerbg{
@@ -852,10 +852,23 @@ footer{
         padding-top: 20px;
     }
 
+    #logo{
+        width: 80px;
+    }
+
+    .navlist{
+        text-align: center;
+    }
+
+    .resume{
+        text-align: center;
+    }
+
     .header-list{
         margin-top: 0px;
         height: 50px;
         padding-top: 17px;
+        padding-bottom: 10px;
     }
 
     .nav-header-list{
@@ -903,9 +916,19 @@ footer{
         width: 70%;
     }
 
-    .presentation{
-        font-size: 38px;
-        line-height: 47px;
+    .presentation .DOM{
+        font-size: 148px;
+        line-height: 148px;
+    }
+
+    #o{
+        width: 110px;
+    }
+
+    .presentation .dom{
+        font-size: 48px;
+        line-height: 48px;
+        
     }
 
     .presentation a span{ 
@@ -920,8 +943,6 @@ footer{
         text-align: center;
         top: 0px;
         padding-top: 35px;
-        padding-left: calc(1rem + (8 - 1) * ((100vw - 30rem)/ (100 - 20)));
-        padding-right: calc(1rem + (8 - 1) * ((100vw - 20rem)/ (100 - 20)));
     }
 
     /* ABOUT ME */
@@ -938,9 +959,21 @@ footer{
         padding: 60px;
     }
 
+    .container-img2{
+        text-align: center;
+    }
+
     .img2{
         position: initial;
-        width: 80%;
+        /* width: 95%; */
+        width: 320px;
+    }
+
+    .guate{
+        position: relative;
+        /* left: 0.5rem; */
+        left: 50%;
+        top: -28rem;
     }
 
     .img-aboutme p{
@@ -971,9 +1004,31 @@ footer{
         text-align: center;
     }
 
+    .skills h3{
+        margin: 0;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .skill-list{
+        margin: 0 0 0 10px;
+
+    }
+
     .img3{
         position: initial;
         width: 80%;
+    }
+
+    .skill-list img{
+        width: 250px;
+
+    }
+
+    .skill-item .up{
+        position: relative;
+        left: 1.2rem;
+        top: -22rem;
     }
 
     .skill-container{
@@ -984,6 +1039,10 @@ footer{
     .titulo-skill h3{
         padding: 20px 0px 20px 0px;
         text-align: center;
+    }
+
+    .see.n{
+        left: 25%;
     }
 
     /* WORK */
@@ -1003,7 +1062,7 @@ footer{
 
     .img4{
         position: initial;
-        width: 80%;
+        width: 150px;
     }
    
     .titulo-work{
@@ -1050,6 +1109,7 @@ footer{
 
     /* FOOTER */ 
     footer{
-        padding-bottom: 75px;
+        padding-bottom: 85px;
     }
+
 }

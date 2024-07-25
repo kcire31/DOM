@@ -35,7 +35,7 @@
 
 .nav-header-list{
     display: flex;
-    justify-content: flex-end; /*quitar esto en el*/
+    justify-content: flex-end;
 }
 
 /* PRESENTATION */
@@ -183,7 +183,7 @@
     /* PRESENTATION */
     .img-presentation{
         display: block;
-        /* width: 100vh; */
+        /* width: auto; */
     }  
 
     .container-img1{
@@ -196,10 +196,10 @@
         flex-direction: column-reverse;
     }
 
-    .container-img2{
+    /* .container-img2{
         display: flex;
         justify-content: center;
-    }
+    } */
 
     /* SKILLS */
     .img-skill{
@@ -212,7 +212,7 @@
     }
 
     .skill-list{
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     /* WORK */
@@ -243,5 +243,13 @@
     .container-img5{
         display: flex;
         justify-content: center;
+    }
+
+    /* FOOTER */
+
+    .rows{
+    display: flex;
+    justify-content:space-around ;
+    flex-direction: column;
     }
 }
